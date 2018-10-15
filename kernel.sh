@@ -41,3 +41,10 @@ fi
 check_availability $TARGZ download
 
 check_availability $DIR uncompress
+
+
+###
+    
+find -name '*.py' | xargs grep -l 'import datetime' | xargs ls -S | head -n 1 | xargs grep -E '^def |^class '
+
+
